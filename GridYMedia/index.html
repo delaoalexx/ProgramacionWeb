@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dragon Tavern</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img\iconDragonType.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>The Dragon Tavern</h1>
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list" id="navList">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Pokemons</a></li>
+                <li><a href="#" class="nav-link">Merch</a></li>
+                <li><a href="#" class="nav-link">Otros tipos</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h2>Merch reciente</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="img\garchompSC.jpg" alt="Producto 1">
+                    <div class="card-content">
+                        <h3>Garchomp plush</h3>
+                        <p>Garchomp Sitting Cuties Plush - 5 ½ In. $16.99.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img\goodraSC.jpg" alt="Producto 2">
+                    <div class="card-content">
+                        <h3>Goodra Plush</h3>
+                        <p>Goodra Sitting Cuties Plush - 5 ½ In. $16.99..</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img\noivernSC.jpg" alt="Producto 3">
+                    <div class="card-content">
+                        <h3>Noivern Plush</h3>
+                        <p>Noivern Sitting Cuties Plush - 5 ½ In. $16.99.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="img\giratinaSC.jpg" alt="Producto 4">
+                    <div class="card-content">
+                        <h3>Giratina Plush</h3>
+                        <p>Giratina Sitting Cuties Plush - 5 ½ In. $16.99.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 The Dragon Tavern. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.getElementById('navList');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
