@@ -1,0 +1,172 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+
+.login {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.login__titulo {
+    color: #333;
+    margin-bottom: 1px;
+}
+
+
+
+.login__inputos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+.login__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.login__btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.login__btn:hover {
+    opacity: 0.9;
+}
+
+/*
+    asi es.... 
+*/
+
+.redes {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redes__texto {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+
+.redes__buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.redes__btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.redes__btn--fb {
+    background-color: #3b5998;
+}
+
+.redes__btn--g{
+    background-color: #db4437;
+}
+
+.redes__btn--tw {
+    background-color: #1da1f2;
+}
+
+.redes__btn--tt {
+    background-color: #121118;
+}
+
+.registro {
+    text-align: center;
+}
+
+.registro__texto {
+    color: #666;
+}
+
+.registro__link {
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* Fondo lado derecho */
+.bckg {
+    background-image: url('img/10y.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Pasar cursor arriba y oscurece ligeramente. */
+.redes__btn:hover {
+    opacity: 0.9;
+}
+
+/* MQ */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    */
+}
